@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include "Animal.h"
+#include "Sheep.h"
+#include "Cow.h"
+#include "Frisian.h"
 
 using namespace std;
 
@@ -18,10 +21,10 @@ void add() {
         cout << "Is the cow a Frisian? (Y/N)" << endl;
         cin >> input;
         if (input == "Y") {
-            container.push_back(new Frisian);
+            container.push_back(new Frisian());
         }
         else if (input == "N") {
-            container.push_back(new Cow);
+            container.push_back(new Cow());
         }
         else {
             cout << "Invalid input" << endl;
